@@ -22,7 +22,7 @@ function InterviewChatbot() {
     setIsLoading(true);
     setError(null);
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/ChatBot`, payload);
+      const response = await axios.post(`${API_BASE_URL}/api/chat`, payload);
       setConversation(response.data.history);
     } catch (err) {
       setError("An unexpected error occurred.");
@@ -53,7 +53,7 @@ function InterviewChatbot() {
 
   return (
     <div className={styles.InterviewChatbot}>
-      <h1>Insurance Policy Simulator</h1>
+      <h1>Insurance Policy Helperminator</h1>
       <button onClick={startInterview} disabled={isLoading}>
         Start Interview
       </button>

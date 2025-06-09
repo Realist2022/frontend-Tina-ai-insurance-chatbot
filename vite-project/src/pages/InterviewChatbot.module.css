@@ -12,6 +12,10 @@ h1 {
   text-align: center;
 }
 
+p{
+  color: white
+}
+
 .jobTitleSection,
 .responseSection {
   margin-bottom: 20px;
