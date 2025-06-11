@@ -1,14 +1,18 @@
-# Turners Insurance app
+# Tina ai chatbot insurance policy app
 
 ## Description
 
-This is a Ai chatbot frontend that is used for user inputs and display. This frontend will connect up to my backend for processing.
+This is a Ai chatbot frontend that is used for user inputs and display. This frontend will connect up to my backend to process users information and return responses based on insurance policies from url.
 
 ## Getting started
 
 - npm create vite@latest
+- npm install axios
+- npm install react-markdown
 
 ## Packages
+
+
 
 ## Git workFlow
 
