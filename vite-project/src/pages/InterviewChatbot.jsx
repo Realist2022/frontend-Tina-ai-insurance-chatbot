@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./InterviewChatbot.module.css";
+import ReactMarkdown from "react-markdown"; 
 
 
 const API_BASE_URL = "http://localhost:3000";
@@ -53,7 +54,8 @@ function InterviewChatbot() {
 
   return (
     <div className={styles.InterviewChatbot}>
-      <h1>Insurance Policy Helperminator</h1>
+      <h1>Insurance Policy</h1>
+      <h3>Tina Turner Helperminator</h3>
       <button onClick={startInterview} disabled={isLoading}>
         Start Interview
       </button>
@@ -64,9 +66,9 @@ function InterviewChatbot() {
         {conversation.map((msg, index) => (
           <p key={index}>
             <strong>
-              {msg.role === "user" ? "You:" : "AI Interviewer:"}
+              {msg.role === "user" ? "You:" : "Tina:"}
             </strong>{" "}
-            {msg.text}
+            <ReactMarkdown>{msg.text}</ReactMarkdown>
           </p>
         ))}
         {isLoading && <p>Loading...</p>}
