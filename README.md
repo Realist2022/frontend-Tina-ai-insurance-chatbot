@@ -18,5 +18,12 @@ This is a Ai chatbot frontend that is used for user inputs and display. This fro
 - npm run dev
 
 
+## Git Flow
+
+- git checkout main
+- git pull origin main
+- git add .
+- git commit -m "Update homepage content"
+- git push origin main
 
 
